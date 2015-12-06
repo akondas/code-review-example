@@ -11,6 +11,7 @@ class ArrayUtils
     {
         $counts = [];
         foreach ($array as $item) {
+            $item = (string) $item;
             if (!isset($counts[$item])) {
                 $counts[$item] = 1;
             } else {
